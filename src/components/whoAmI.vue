@@ -29,12 +29,14 @@
             yetmesi sonucu başlayan macera ile bu günlere geldim. Bu zamana kadar 2 reklam ajansı, 
             1 Startup ve freenlace çalışmış bulunmaktayım.Son iş yerim olan Modern Medya Group şirketinde
             kodladığım inborn.digital sitesi ulusal ve uluslar arası yarışmalarda 5 <router-link  to="/awards" tag="a" exact> ödüle </router-link>  laik görüldü. 
-            interaksiyonlu ve animasyonlu web siteleri kodlamayı seviyorum. Bu konuda araştırmayı, kendimi geliştirmeye ve ödüller almaya devam etmek istiyorum.
+            interaksiyonlu ve animasyonlu web siteleri kodlamayı seviyorum. Bu konuda araştırmayı, kendimi geliştirmeye ve ödüller almaya devam etmek isteyen birisiyim.
             <div class="socialInfo">
-                    <a href="" target="_blank">Githup</a>
-                    <a href="https://www.linkedin.com/in/sergen-aslan-97a517136" target="_blank">linkending</a>
-                    <a href="" target="_blank">Gmail</a>
-                    <a href="https://t.me/sergenaslan" target="_blank">Telegram</a>
+                <a href="https://github.com/sergenaslan" target="_blank" title="sergenaslan">Githup</a>
+                <a href="https://www.linkssssssssssssedin.com/in/sergen-aslan-97a517136" target="_blank" title="sergenaslan">linkending</a>
+                <a href="mailto:sergenaslan09@gmail.com" target="_blank" title="sergenaslan09@gmail.com">Gmail</a>
+                <a href="https://t.me/sergenaslan" target="_blank" title="sergenaslan">Telegram</a>
+                <a href="https://twitter.com/sergenaslan0" target="_blank" title="sergenaslan0">Twitter</a>
+                <!-- Telefon Numaram : 05417336078 -->
             </div>
         </div>
     </div>
@@ -56,12 +58,13 @@ export default {
     margin-top: 50px;
     width: 100%;
     height: 60px;
-    border:1px solid red;
     display: flex;
     justify-content: space-around;
 }
 .presentationText .socialInfo a{
     color:white;
+    text-decoration: none;
+    font-weight: normal;
 }
 .whoAmI{
     width: 100%;
@@ -70,17 +73,14 @@ export default {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    border:1px dashed white;
 }
 
 .presentation{
     width: 100%;
-    border:1px solid white;
 }
 .ımageAnimation{
     width: 450px;
     display: inline-block;
-    border:1px solid red;
     height: 300px;
 }
 .cells{
@@ -165,20 +165,51 @@ export default {
     display: inline-block;
     width: calc( 90% - 450px );
     min-height: 150px;
-    border:1px solid blue;
+    font-size: 18px;
+    line-height: 21px;
 }
-.presentationText a{
-    color:blue
-}
-@media(max-width: 1200px){ 
 
+.presentationText a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+@media(max-width: 1000px){ 
+    .ımageAnimation{
+        width: 55%;
+    }
+    .presentationText{
+        width:  45%;
+        padding:0 10px;
+    }
 
 }
 @media(max-width: 850px){ 
-
+    .socialInfo{
+        margin-top: 20px;
+    }
+    .ımageAnimation{
+        width: 450px;
+    }
+    .presentationText{
+        width:  85%;
+    }
 
 } 
 @media(max-width: 576px){  
+    .ımageAnimation{
+        width: 450px;
+        height: 250px;
+    }
+    .presentationText{
+        margin-top: 20px;
+        width:  100%;
+        font-size: 16px;
+        padding:0 10px;
+    }
+    .socialInfo{
+        margin-top: 20px;
+         height: 30px;
+    }
 
 
 }

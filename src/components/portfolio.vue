@@ -13,14 +13,13 @@
             </div>
             <div class="useTechnic">
                 <span v-for="tech in project.useTechnic" :key="tech" :class="tech"> {{tech}} </span>
-                <!-- <span class="html">html</span><span class="css3">css3</span><span class="javascirpt">javascript</span><span class="vuejs">vuejs</span> -->
             </div>
             <div class="openLink">
-                <a :href="project.githupLink"  :class="{dipslayNone : project.githupLink == ''} ">
+                <a :href="project.githupLink"  :class="{dipslayNone : project.githupLink == ''} "  target="_blank">
                     <svg height="20" width="20" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1"  aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
                     github' da aç 
                 </a>
-                <a :href="project.chromeLink">
+                <a :href="project.chromeLink" target="_blank">
                     <svg height="20" width="20" viewBox="0 30 185 110"><defs>
                     <linearGradient y2="44.354" x2="81.837" y1="75.021" x1="29.337" gradientUnits="userSpaceOnUse" id="f" xlink:href="#a"/>
                     <linearGradient y2="130.33" x2="52.538" y1="164.5" x1="110.87" gradientUnits="userSpaceOnUse" id="g" xlink:href="#b"/>
@@ -47,12 +46,12 @@ export default {
         return{
             projectData : [
                 { name : "İnborn Progresive", commet : "Ulusal ve uluslar arası Ödüller aldığım projem", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/inborn.jpg",chromeLink : "http://www.inborn.digital/",githupLink : ""},
-                { name : "Kuafor Fiyonk", commet : "Bir tasarımcı dokunuşu ve bir kaç animasyondan sonra ödüller alıcak", useTechnic : ["html","css3","javascript","vuejs"], projectImage : "./src/assets/images/project/fiyonk-com.jpg",chromeLink : "http://kuaforfiyonk.com/",githupLink : "https://github.com/"},
-                { name : "sergenaslan.net", commet : "Terzi kendi söküğünü dikmeli dedim ve kişisel web sitemi yaptım", useTechnic : ["html","css3","javascript","vuejs"], projectImage : "./src/assets/images/project/sergenaslan.jpg",chromeLink : "",githupLink : "https://github.com/"},
+                { name : "Kuafor Fiyonk", commet : "Bir tasarımcı dokunuşu ve bir kaç animasyondan sonra ödüller alıcak", useTechnic : ["html","css3","javascript","vuejs"], projectImage : "./src/assets/images/project/fiyonk-com.jpg",chromeLink : "http://kuaforfiyonk.com/",githupLink : "https://github.com/sergenaslan/kauforfiyonk.com"},
+                { name : "sergenaslan.net", commet : "Terzi kendi söküğünü dikmeli dedim ve kişisel web sitemi yaptım", useTechnic : ["html","css3","javascript","vuejs"], projectImage : "./src/assets/images/project/sergenaslan.jpg",chromeLink : "",githupLink : "https://github.com/sergenaslan/sergenaslan.net"},
                 { name : "Xone Super Yacht", commet : "Arkadaki Zom-in slider olgaritması zorlamıştı", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/xonesuperyacht.jpg",chromeLink : "https://xonesuperyacht.com/",githupLink : ""},
                 { name : "Solgar U-Cubes", commet : "Dedim bu küpler resimlerde sabit durmasın hareket etsin, uğraşma dediler, uğraştım", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/ucubes.jpg",chromeLink : "https://solgar.com.tr/pgs/landing/u-cubes/",githupLink : ""},
-                { name : "AntiKolik Biberon", commet : "Askerden dönüşümde kodladığım ilk proje", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/tomme-antikolik-biberon.jpg",chromeLink : "http://sergenaslan.net/tomme-1/",githupLink : "https://github.com/"},
-                { name : "Meyve Süzgeci", commet : "Güzel bir landing page tasarımı ", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/tomme-meyve-suzgeci.jpg",chromeLink : "http://sergenaslan.net/tomme-2/",githupLink : "https://github.com/"}
+                { name : "AntiKolik Biberon", commet : "Askerden dönüşümde kodladığım ilk proje", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/tomme-antikolik-biberon.jpg",chromeLink : "http://sergenaslan.net/tomme-1/",githupLink : "https://github.com/sergenaslan/Tomme-biberon-1"},
+                { name : "Meyve Süzgeci", commet : "Güzel bir landing page tasarımı ", useTechnic : ["html","css3","javascript"], projectImage : "./src/assets/images/project/tomme-meyve-suzgeci.jpg",chromeLink : "http://sergenaslan.net/tomme-2/",githupLink : "https://github.com/sergenaslan/tomme-biberon-2"}
             ]
         }
     },
@@ -75,7 +74,6 @@ export default {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-/*     border:1px dashed white; */
 }
 h1{
     width: 100%;
@@ -121,7 +119,6 @@ h1{
     position: relative;
     width: 100%;
     height: 150px;
-    border:1px solid blue;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -189,26 +186,40 @@ h1{
     .project{
         min-height: 250px;
         margin-bottom: 120px;
-        border:1px solid red;
     }
 
 }
 @media(max-width: 900px){ 
     .projects{
-        border:1px solid red;
         justify-content: space-around;
     }
     .project{
         width: 40%;
         min-height: 350px;
-        border:1px solid red;
+        margin-bottom: 35px;
     }
-
+        .project::after{
+        -webkit-clip-path: inset(2rem 0 7rem 2rem round 10px);
+        clip-path: inset(2rem 0 7rem 2rem round 10px);
+    }
+    .project:hover::after{
+        -webkit-clip-path: inset(0 0 6rem 0 round 10px);
+        clip-path: inset(0 0 6rem 0 round 30px);
+    }
 } 
 @media(max-width: 700px){  
     .project{
-        width: 60%;
+        width: 85%;
     }
+    .project::after{
+        -webkit-clip-path: inset(2rem 0 8rem 2rem round 10px);
+        clip-path: inset(2rem 0 8rem 2rem round 10px);
+    }
+    .project:hover::after{
+        -webkit-clip-path: inset(2rem 0 8rem 2rem round 10px);
+        clip-path: inset(2rem 0 8rem 2rem round 10px);
+    }
+
 
 }
 </style>

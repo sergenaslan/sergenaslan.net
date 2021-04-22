@@ -226,9 +226,7 @@ export default {
 .slideDown{
     animation: down .5s ease;
 }
-/*
-up 
-down */
+
 @keyframes up {
   from {
         clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)
@@ -246,16 +244,32 @@ down */
     }
 }
 
-@media(max-width: 1200px){ 
-
-
-}
-@media(max-width: 850px){ 
-
+@media(max-width: 750px){ 
+    .projectImage{
+        margin-top: 50px;
+    }
+    .projectComment{
+        width: 60%;
+        height: 200px;
+    }
 
 } 
 @media(max-width: 576px){  
-
+    .projectComment{
+        width: 90%;
+    }
+    .leftIcon, .rightIcon{
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+        background-position: 7px center;
+    }
+    .leftIcon{
+        left: -13px;
+    }
+    .rightIcon {
+        right: -17px;
+    }
 
 }
 </style>
