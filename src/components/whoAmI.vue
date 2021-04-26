@@ -30,6 +30,7 @@
             1 Startup ve freenlace çalışmış bulunmaktayım.Son iş yerim olan Modern Medya Group şirketinde
             kodladığım inborn.digital sitesi ulusal ve uluslar arası yarışmalarda 5 <router-link  to="/awards" tag="a" exact> ödüle </router-link>  laik görüldü. 
             interaksiyonlu ve animasyonlu web siteleri kodlamayı seviyorum. Bu konuda araştırmayı, kendimi geliştirmeye ve ödüller almaya devam etmek isteyen birisiyim.
+            <br><br>Sosyal Medya Hesaplarım 
             <div class="socialInfo">
                 <a href="https://github.com/sergenaslan" target="_blank" title="sergenaslan">Githup</a>
                 <a href="https://www.linkssssssssssssedin.com/in/sergen-aslan-97a517136" target="_blank" title="sergenaslan">linkending</a>
@@ -55,7 +56,7 @@ export default {
 </script>
 <style scoped>
 .socialInfo{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     height: 60px;
     display: flex;
@@ -185,7 +186,7 @@ export default {
 }
 @media(max-width: 850px){ 
     .socialInfo{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .ımageAnimation{
         width: 450px;
@@ -207,7 +208,7 @@ export default {
         padding:0 10px;
     }
     .socialInfo{
-        margin-top: 20px;
+        margin-top: 10px;
          height: 30px;
     }
 

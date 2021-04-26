@@ -42,6 +42,7 @@ export default {
  .fluid{
    padding:0 5%;
    box-sizing : border-box;
+   padding-top: 80px;
  }
 }
 
